@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <meta name="referrer" content="never">
   <title>&#22269;&#23478;&#21453;&#35784;&#20013;&#24515;</title>
   <meta name="apple-mobile-web-app-title" content="&#22269;&#23478;&#21453;&#35784;&#20013;&#24515;">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,15 +16,36 @@
   https://static-s.aa-cdn.net/img/ios/1552823102/a02c41bbc222e8b1dfa26b8a6a2220f3?v=1
   https://pp.myapp.com/ma_icon/0/icon_54132885_1616825360/256
   https://pp.myapp.com/ma_icon/0/icon_54132885_1616825360/96-->
-  <style>
-    body {margin:0; padding:0; margin-top:-10vw}
-    body img {margin:0; padding:0; width:100vw}
+  <link rel="apple-touch-startup-image" href="https://p1.itc.cn/q_70/images03/20210325/6336863fc5c04e0884e3011e55f43fbe.jpeg"/>
+  <style type="text/css">
+    body,div,picture {margin:0; padding:0}
+    div#home {margin-top:-10vw; display:block}
+    div#p3 {display:none}
+    img {width:100vw}
   </style>
 </head>
 <body>
+  <div id="home" onclick="home2p3()">
   <picture>
     <source src="http://www.sxhctv.com/uploads/allimg/20210319/1616139632517164.jpg">
     <img src="http://www.sinan.gov.cn/jdhy/hygq/202103/W020210325375292906293.png">
   </picture>
+  </div>
+  <div id="p3" onclick="p32home()">
+  <picture>
+    <source src="https://mmbiz.qpic.cn/mmbiz_png/46F0jNN892wWVFo9zvQwLvnn3mgibJrYMrsNMGCU54NkvicBT5iaW6u3ibIhj1CmHBFFqHlfqljX4YvhgaDicDv9UUQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1">
+    <img src="http://res.hannews.com.cn/a/10001/202103/a3f33f0916803dddf8a5ea18257a7f16.jpg">
+  </picture>
+  </div>
+  <script type="text/javascript">
+    function home2p3(e) {
+      document.getElementById("home").style.display="none";
+      document.getElementById("p3").style.display="block";
+    }
+    function p32home(e) {
+      document.getElementById("p3").style.display="none";
+      document.getElementById("home").style.display="block";
+    }
+  </script>
 </body>
 </html>
